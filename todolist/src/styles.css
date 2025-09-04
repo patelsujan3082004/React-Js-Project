@@ -1,0 +1,140 @@
+/* ToDoList.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+/* Main container */
+.todo-container {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.todo-container:hover {
+  transform: translateY(-3px);
+}
+
+.todo-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+}
+
+/* Form styles */
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: border 0.3s ease;
+  font-size: 16px;
+}
+
+.todo-form input:focus {
+  border-color: #6c63ff;
+}
+
+.todo-form button {
+  padding: 12px 18px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.todo-form button:hover {
+  background: #5548c8;
+}
+
+/* Task List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+/* Task Item */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+  background: #eef0f5;
+}
+
+.todo-item span {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+  word-break: break-word;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+/* Edit button */
+.edit-btn {
+  background: #ffe082;
+}
+
+.edit-btn:hover {
+  background: #ffd54f;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #ff8a80;
+}
+
+.delete-btn:hover {
+  background: #ff5252;
+}
