@@ -1,0 +1,115 @@
+/* Container */
+.table-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.table-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Table */
+.contacts-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.contacts-table thead {
+  background: #3498db;
+  color: #fff;
+  text-align: left;
+}
+
+.contacts-table th,
+.contacts-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.contacts-table th {
+  font-weight: 600;
+}
+
+.contacts-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.contacts-table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.contacts-table tbody tr:hover {
+  background: #ecf6fc;
+}
+
+/* Back Button */
+.back-btn {
+  display: block;
+  margin: 25px auto 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #2ecc71;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #27ae60;
+  transform: translateY(-2px);
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .contacts-table,
+  .contacts-table thead,
+  .contacts-table tbody,
+  .contacts-table th,
+  .contacts-table td,
+  .contacts-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .contacts-table thead {
+    display: none;
+  }
+
+  .contacts-table tr {
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .contacts-table td {
+    text-align: right;
+    padding: 10px;
+    border: none;
+    position: relative;
+  }
+
+  .contacts-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    font-weight: bold;
+    color: #34495e;
+  }
+}
